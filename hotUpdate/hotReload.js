@@ -23,3 +23,12 @@ utils.watchCleanCache = function (path, fc) {
     }
   });
 };
+
+utils.require = function(path,cb){
+  let requireObj = require(path);
+  cb(requireObj);
+  this.watchCleanCache(path,()=>{
+    requireObj = require(path);
+    cb(requireObj);
+  })
+}

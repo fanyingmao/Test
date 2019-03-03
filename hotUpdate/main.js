@@ -1,14 +1,13 @@
 let Room;
 const hotReload = require('./hotReload');
-let update = function () {
-  Room = require('./room');
-}
-update();
-hotReload.watchCleanCache(require.resolve('./room'), update);
+
+hotReload.require(require.resolve('./room'), (requireObj)=>{
+  Room = requireObj;
+});
 
 let oldRoom = new Room('old');
 oldRoom.action();
-setTimeout(()=>{
+setTimeout(()=>{//5s 后实例化新的房间对象，在这5s间修改 room.js 的代码
   let newRoom = new Room('new');
   newRoom.action();
 },5000);
