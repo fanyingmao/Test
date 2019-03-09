@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/fanyingmao/Test/issues"
   },
-  "homepage": "https://github.com/fanyingmao/Test#readme"
+  "homepage": "https://github.com/fanyingmao/Test#readme",
+  "dependencies": {
+    "crypto": "^1.0.1"
+  }
 }
