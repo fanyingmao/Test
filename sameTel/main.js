@@ -14,16 +14,26 @@ for (let j = 0; j < testNum; j++) {
     tem.push(Math.floor(rand % 10));
     mo *= 10;
   }
+
+  let tem2 = [];
+  rand = Math.random();
+  mo = 1;
+  for (let i = 0; i < tel.length; i++) {
+    rand *= 10;
+    tem2.push(Math.floor(rand % 10));
+    mo *= 10;
+  }
+  tem2.sort();
   tem.sort();
   for (let i = 0; i < tel.length; i++) {
-    if (tel[i] !== tem[i]) {
+    if (tem2[i] !== tem[i]) {
       noSameTem++;
     }
     if (noSameTem > noSame) {
       break;
     }
   }
-  if (noSameTem === noSame) {
+  if (noSameTem <= noSame) {
     resNum++;
   }
 }
