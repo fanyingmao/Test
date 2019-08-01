@@ -4,7 +4,7 @@
   "description": "用来记录测试代码",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/fanyingmao/Test#readme",
   "dependencies": {
-    "crypto": "^1.0.1"
+    "crypto": "^1.0.1",
+    "heapdump": "^0.3.14"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0"
   }
 }
