@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceFolder}/koa/app.js"
+        },
+    
+        {
+            "type": "node",
             "request": "attach",
             "name": "Attach to Remote",
             "address": "by.fanym.top",
