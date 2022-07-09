@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "用来记录测试代码",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "jest"
   },
@@ -17,9 +18,11 @@
   },
   "homepage": "https://github.com/fanyingmao/Test#readme",
   "dependencies": {
+    "bip39": "^3.0.4",
     "crypto": "^1.0.1",
     "heapdump": "^0.3.14",
     "md5-node": "^1.0.1",
+    "node-fetch": "^3.2.6",
     "url": "^0.11.0"
   },
   "devDependencies": {
