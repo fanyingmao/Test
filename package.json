@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "用来记录测试代码",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "jest"
   },
@@ -18,11 +17,18 @@
   },
   "homepage": "https://github.com/fanyingmao/Test#readme",
   "dependencies": {
+    "axios": "^0.27.2",
     "bip39": "^3.0.4",
     "crypto": "^1.0.1",
     "heapdump": "^0.3.14",
+    "ipdb": "^0.3.3",
+    "ipip-ipdb": "^0.6.0",
     "md5-node": "^1.0.1",
+    "moment": "^2.29.4",
     "node-fetch": "^3.2.6",
+    "node-qqwry": "0.0.2",
+    "prompt-engine": "0.0.31",
+    "qqwry.ipdb": "^2022.6.15",
     "url": "^0.11.0"
   },
   "devDependencies": {
